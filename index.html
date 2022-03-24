@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN ICON --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./toastr/toastr.min.css"> <!-- tiene que despues del CDN de bootstrap -->
+    <title>vanillatoasts</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid px-0">
+            <div class="card">
+                <div class="card-body back-g blue" id="bgDisplay" >
+                   <div class="row d-flex flex-row justify-content-evenly ">
+                        <div class="col-2 d-flex justify-content-center container" id="imgCaption"></div>
+                        <div class="col-10 description" id="descriptCaption"></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body center">
+                <button class="btn btn-success" id="btnSuc"> success</button>
+                <button class="btn btn-info" id="btnInf"> info</button>
+                <button class="btn btn-warning" id="btnWar"> warning</button>
+                <button class="btn btn-danger" id="btnErr"> error</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <h4>News Title ... </h4> <i class="bi bi-emoji-smile" id="icon"></i> 
+            </div>
+            <div class="card-body">
+                <a href="https://codeseven.github.io/toastr/" style="display: block;">Toastr Notifications</a>
+                <a href="http://codeseven.github.io/toastr/demo.html">Demo</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./toastr/toastr.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
